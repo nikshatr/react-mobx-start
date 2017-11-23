@@ -1,0 +1,11 @@
+{
+	"plugins": {
+		"stylelint": {},
+		"postcss-nested": {},
+		"postcss-color-short": {},
+		"postcss-short": {},
+		"postcss-cssnext": {},
+		"css-mqpacker": {},
+		"postcss-browser-reporter": {}
+	}
+}

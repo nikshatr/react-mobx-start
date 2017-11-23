@@ -1,0 +1,9 @@
+{
+	"name": "nativka-demo",
+	"version": "1.0.0",
+	"license": "ISC",
+	"scripts": {
+		"dev": "webpack-dev-server --config ./configs/webpack/webpack.config.babel.js --progress --colors",
+		"production": "NODE_ENV=production webpack -p --progress"
+	}
+}

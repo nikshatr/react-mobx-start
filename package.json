@@ -1,12 +1,23 @@
 {
-  "license": "MIT",
-  "name": "react-start",
+  "name": "react-mobx-start",
   "version": "1.0.0",
-  "description": "React Boilerplate",
-  "author": "Nikita Shatrov",
-  "repository": "https://github.com/nikshatr/react-start",
+  "description": "React-Mobx start",
+  "main": "src/index.js",
   "dependencies": {
     "copy-dir": "^0.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikshatr/react-mobx-start.git"
+  },
+  "author": "Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikshatr/react-mobx-start/issues"
+  },
+  "homepage": "https://github.com/nikshatr/react-mobx-start#readme"
 }

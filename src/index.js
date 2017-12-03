@@ -1,15 +1,22 @@
+#!/usr/bin/env node
+
 const process = require('process');
 const fs = require('fs');
 const path = require('path');
 const copydir = require('copy-dir');
-const cp = require('child_process');
-
-if (process.argv.slice(2)[0] === '.') {
-};
 
 const folder = path.resolve(process.argv.slice(2)[0]);
 
 function createWorkspace() {
+    if (process.argv.slice(2)[0] === '.') {
+        copydir(path.resolve() + '/template', folder, err => {
+            if (err) return console.log(err);
+
+            console.log('OK');
+        });
+        return;
+    };
+
     fs.mkdir(folder, err => {
         if (err) {
             if (err.code !== 'EEXIST') {
@@ -29,7 +36,7 @@ function createWorkspace() {
         };
 
         copydir(path.resolve() + '/template', folder, err => {
-            if (err) return console.log(err);
+            if (err) return console.log(err)
 
             console.log('OK');
         });

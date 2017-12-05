@@ -1,6 +1,6 @@
 {
   "name": "react-mobx-start",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "React-Mobx start",
   "main": "src/index.js",
   "dependencies": {

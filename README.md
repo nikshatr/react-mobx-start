@@ -11,14 +11,14 @@ $ cd <directory>
 $ npm install
 ```
 
-** development mode **
+**development mode**
 ```sh
 $ npm run dev
 ```
 
 Open `localhost:8080` in your browser
 
-** production mode **
+**production mode**
 ```sh
 $ npm run production
 ```

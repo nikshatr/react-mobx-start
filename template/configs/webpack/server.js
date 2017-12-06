@@ -1,9 +1,7 @@
-const server = () => ({
+module.exports = () => ({
     devServer: {
         hot: true,
         publicPath: '/',
         stats: 'errors-only'
     }
 })
-
-export default server

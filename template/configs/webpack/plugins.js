@@ -1,10 +1,10 @@
-import { resolve } from 'path'
-import webpack from 'webpack'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import ExtractWebpackPlugin from 'extract-text-webpack-plugin'
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
+const { resolve } = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractWebpackPlugin = require('extract-text-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
-const plugins = () => ({
+module.exports = () => ({
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new BundleAnalyzerPlugin({
@@ -32,5 +32,3 @@ const plugins = () => ({
         })
     ]
 })
-
-export default plugins

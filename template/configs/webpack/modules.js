@@ -1,6 +1,6 @@
-import ExtractWebpackPlugin from 'extract-text-webpack-plugin'
+const ExtractWebpackPlugin = require('extract-text-webpack-plugin')
 
-const modules = () => ({
+module.exports = () => ({
     module: {
         rules: [
             {
@@ -38,5 +38,3 @@ const modules = () => ({
         ]
     }
 })
-
-export default modules

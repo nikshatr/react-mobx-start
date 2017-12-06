@@ -1,4 +1,4 @@
-const entry = () => ({
+module.exports = () => ({
     entry: {
         app: [
             'react-hot-loader/patch',
@@ -9,5 +9,3 @@ const entry = () => ({
         vendor: ['react', 'react-dom', 'react-router-dom', 'mobx', 'mobx-react', 'react-transition-group']
     }
 })
-
-export default entry

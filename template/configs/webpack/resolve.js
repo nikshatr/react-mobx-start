@@ -1,18 +1,16 @@
-import { resolve } from 'path'
+const { resolve } = require('path')
 
-const resolve = () => ({
+module.exports = () => ({
     resolve: {
         extensions: ['.js', '.jsx', '.pcss', '.css', '.postcss', '.scss', '.sss'],
         alias: {
-            '@': path.resolve('src'),
-            '@assets': path.resolve('src/assets'),
-            '@components': path.resolve('src/components'),
-            '@containers': path.resolve('src/containers'),
-            '@pages': path.resolve('src/pages'),
-            '@stores': path.resolve('src/stores'),
-            '@styles': path.resolve('src/styles')
+            '@': resolve('src'),
+            '@components': resolve('src/components'),
+            '@containers': resolve('src/containers'),
+            '@HOC': resolve('src/HOC'),
+            '@pages': resolve('src/pages'),
+            '@routes': resolve('src/routes'),
+            '@stores': resolve('src/stores'),
         }
     }
 })
-
-export default resolve
